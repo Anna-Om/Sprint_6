@@ -1,6 +1,6 @@
 import allure
 import pytest
-from home_page_locators import TestHomePageLocators 
+from locators.home_page_locators import TestHomePageLocators 
 from data_tests import expected_texts, DZEN_URL, BASE_URL
 
 
@@ -29,7 +29,7 @@ class TestHomePageSamokat:
     @allure.description('Проверка открытия страницы Яндекс.Дзен в соседней вкладке при нажатии на логотип "Яндекс"')
     def test_clicking_yandex_logo_opens_dzen_page(self, driver, home_page):
         home_page.click_logo_yandex_open_dzen_page()
-        assert driver.current_url == DZEN_URL
+        home_page.is_dzen_url(self, driver)
 
     @allure.title('Проверка нажатия на логотип "Самокат"')
     @allure.description('Проверка перехода на главную страницу при нажатии на логотип "Самокат"')

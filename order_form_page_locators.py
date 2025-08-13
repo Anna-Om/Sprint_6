@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-class TestOrderFormPageLocators:
+class OrderFormPageLocators:
 
     # Экран "Для кого самокат"
     # Поле Имя

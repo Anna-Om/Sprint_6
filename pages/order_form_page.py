@@ -1,5 +1,5 @@
 import allure
-from order_form_page_locators import TestOrderFormPageLocators
+from locators.order_form_page_locators import TestOrderFormPageLocators
 from base_page import BasePage
 
 

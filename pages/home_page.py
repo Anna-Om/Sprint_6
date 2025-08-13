@@ -1,6 +1,6 @@
 import allure
 from home_page_locators import TestHomePageLocators
-from base_page import BasePage
+from pages.base_page import BasePage
 from data_tests import DZEN_URL 
 
 
